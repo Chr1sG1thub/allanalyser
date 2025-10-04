@@ -36,7 +36,7 @@
 let wordList = [];
 
 function loadWordList() {
-  return fetch('words.json')
+  return fetch('allwords.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
